@@ -13,3 +13,13 @@ Django RESTFramework
 Python 3.8,
 rest_framework
 
+## What have been done:
+- Admin Panel to manage users
+- Registration
+- Log In
+- CRUD tasks
+
+## What have not been done:
+- Web template
+- Comments on the tasks
+- Using domain as an endpoint of API urls, such as: "WFH/thuyTT7" to search the user and her/his information
