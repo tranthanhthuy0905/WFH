@@ -3,8 +3,6 @@ from accountTracking.models import Account
 
 class RegistrationSerializer(serializers.ModelSerializer):
 
-    phone_number = serializers.IntegerField(style={'input_type': 'username'},
-                                   write_only=True)
     password2 = serializers.CharField(style={'input_type': 'username'},
                                    write_only=True)
     class Meta:

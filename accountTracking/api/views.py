@@ -3,6 +3,7 @@ from rest_framework.decorators import api_view
 
 from accountTracking.api.serializers import RegistrationSerializer
 from rest_framework.authtoken.models import Token
+
 @api_view(['POST',])
 def registration_view(request):
     if request.method == 'POST':
@@ -10,6 +11,7 @@ def registration_view(request):
 
         #Define data obj
         data={}
+
         if serializer.is_valid():
             account=serializer.save()
             data['response'] = "successfully registered a new user."
